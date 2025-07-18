@@ -1,5 +1,10 @@
 # 📋 Sistema de Gerenciamento de Candidatos SRE v2.0  
 
+
+## Sobre o Projeto
+
+Este programa foi desenvolvido com o objetivo de auxiliar no processo de contratação anual de profissionais da educação pela Secretaria de Estado de Educação de Minas Gerais (SEE MG). Sua finalidade é facilitar o credenciamento e a reclassificação de candidatos, oferecendo uma solução eficiente e organizada para a gestão do processo seletivo.Sendo um presente meu a SEEMG Pouso Alegre enquanto era estagiário.
+
 **✨ Aplicação desktop para cadastro e acompanhamento de candidatos em tempo real usando Firebase**  
 
 ![Tela do Sistema](screenshot.png) *(Imagem ilustrativa - adicionar screenshot real)*  
