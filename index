@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRE Pouso Alegre - Visualização de Candidatos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SRE Pouso Alegre - Superintendência Regional de Ensino</h1>
+            <h2>Visualização de Candidatos</h2>
+        </header>
+
+        <div class="controls">
+            <label for="lista-select">Selecione a Listagem:</label>
+            <select id="lista-select" class="form-control">
+                <option value="">Carregando listas...</option>
+            </select>
+            
+            <div class="status-filter">
+                <label>Filtrar por Status:</label>
+                <select id="status-select" class="form-control">
+                    <option value="TODOS">TODOS</option>
+                    <option value="PRESENTE">PRESENTE</option>
+                    <option value="AUSENTE">AUSENTE</option>
+                    <option value="CONFERENCIA">CONFERENCIA</option>
+                    <option value="DESISTENCIA">DESISTENCIA</option>
+                    <option value="ESCOLHEU VAGA">ESCOLHEU VAGA</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="candidatos-table">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome do Candidato</th>
+                        <th>Classificação</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Dados serão inseridos aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Atualizado em: <span id="update-time">--/--/---- --:--:--</span></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
